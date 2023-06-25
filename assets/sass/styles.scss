@@ -1,0 +1,56 @@
+$body-color: #eee;
+$box-color: #f8f9fa;
+$gray: #bab3b3;
+
+body {
+  margin-top: 40px;
+  background: $body-color;
+}
+
+h6 {
+  margin-left: 20px;
+  margin-top: 20px;
+  line-height: 2;
+}
+.btn-default:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+}
+
+.page-todo {
+  & .tasks {
+    background: $box-color;
+    padding: 0;
+    border-radius: 5px;
+  }
+  & .task-list {
+    padding: 30px 15px;
+    height: 100%;
+  }
+  & .task {
+    margin-bottom: 1px;
+    position: relative;
+    & .desc {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 10px;
+      transition: opacity 500ms;
+      &.faded-out {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.high-container .pin,
+.medium-container .pin,
+.low-container .pin {
+  color: $gray;
+}

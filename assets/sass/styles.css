@@ -1,0 +1,58 @@
+body {
+  margin-top: 40px;
+  background: #eee;
+}
+
+h6 {
+  margin-left: 20px;
+  margin-top: 20px;
+  line-height: 2;
+}
+
+.btn-default:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+}
+
+.page-todo .tasks {
+  background: #f8f9fa;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.page-todo .task-list {
+  padding: 30px 15px;
+  height: 100%;
+}
+
+.page-todo .task {
+  margin-bottom: 1px;
+  position: relative;
+}
+
+.page-todo .task .desc {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 10px;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.page-todo .task .desc.faded-out {
+  opacity: 0;
+}
+
+.high-container .pin,
+.medium-container .pin,
+.low-container .pin {
+  color: #bab3b3;
+}
+/*# sourceMappingURL=styles.css.map */

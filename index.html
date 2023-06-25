@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>To do list</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/sass/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row ">
+            <div class="col pt-3">
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" id="input-name" required>
+            </div>
+            <div class="col pt-3">
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="priority-selected">Choose a priority</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="priority" >
+                        <li><a class="dropdown-item dropdown-item-priority" href="#">High priority</a></li>
+                        <li><a class="dropdown-item dropdown-item-priority" href="#">Medium priority</a></li>
+                        <li><a class="dropdown-item dropdown-item-priority" href="#">Low priority</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col pt-3">
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton2"
+                        data-toggle="dropdown" aria-expanded="false">
+                        <span class="color-selected">Choose a color</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item dropdown-item-color" href="#">Red</a></li>
+                        <li><a class="dropdown-item dropdown-item-color" href="#">Blue</a></li>
+                        <li><a class="dropdown-item dropdown-item-color" href="#">Green</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col pt-3">
+                <button type="button" class="btn btn-outline-secondary" id="add"><b>+</b></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <button type="button" class="btn btn-default mt-3" id="remove-filter"><i class='fa fa-filter fa-2x'></i></button>
+        <button type="button" class="btn btn-danger btn-circle mt-3" id="filter-red"></button>
+        <button type="button" class="btn btn-info btn-circle mt-3" id="filter-blue"></button>
+        <button type="button" class="btn btn-success btn-circle mt-3" id="filter-green"></button>
+    </div>
+    <div class="container">
+        <h1>Tasks</h1>
+    </div>
+    
+    <div class="container page-todo">
+        <div class="tasks">
+            <h6>Pin Tasks</h6>
+            <div class="task-list">
+                <div class="task high high-container-pin"></div>
+                <div class="task medium medium-container-pin"></div>
+                <div class="task low low-container-pin"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container page-todo">   
+        <div class="tasks">
+            <h6>Todo Tasks</h6>
+            <div class="task-list">
+                <div class="task high high-container"></div>
+                <div class="task medium medium-container"></div>
+                <div class="task low low-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container page-todo">
+        <div class="tasks">
+            <h6>Completed Tasks</h6>
+            <div class="task-list">
+                <div class="task high high-container-done"></div>
+                <div class="task medium medium-container-done"></div>
+                <div class="task low low-container-done"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>
